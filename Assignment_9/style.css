@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow: hidden;
+}
+.main {
+  border: 1px solid green;
+  height: 100vh;
+  width: 100vw;
+}
+.sky {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(Car_Animation_Resources/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.city {
+  position: relative;
+  display: block;
+  top: 129.5px;
+  height: 250px;
+  width: 500%;
+  background-image: url(Car_Animation_Resources/city.png);
+  background-position: left;
+  background-repeat: repeat-x;
+}
+
+.road {
+  position: relative;
+  top: 130px;
+  height: 300px;
+  width: 500%;
+  background-image: url(Car_Animation_Resources/road.jpg);
+  background-position: left;
+  background-repeat: repeat-x;
+  display: block;
+}
+.city {
+  animation: city 12s linear infinite;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-1418px);
+  }
+}
+.road {
+  animation: road;
+  animation: road 16s linear infinite;
+}
+@keyframes road {
+  100% {
+    transform: translateX(-5140px);
+  }
+}
+.car {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.body {
+  position: absolute;
+  background: url(Car_Animation_Resources/car.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.wheel1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url(Car_Animation_Resources/wheel.png);
+  background-size: contain;
+  border-radius: 100%;
+  left: 36px;
+  top: 120px;
+}
+
+.wheel2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: url(Car_Animation_Resources/wheel.png);
+  background-size: contain;
+  border-radius: 100%;
+  right: 48px;
+  top: 120px;
+}
+.wheel1,
+.wheel2 {
+  animation: wheel 3s linear infinite;
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

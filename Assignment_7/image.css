@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+body {
+  overflow: hidden;
+}
+div {
+  position: absolute;
+  display: flex;
+  height: auto;
+  width: auto;
+  /* ////////////////////// */
+  animation: slide 16s ease infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section:nth-child(1) {
+  background-image: url(image/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg);
+  background-size: cover;
+}
+section:nth-child(2) {
+  background-image: url(image/retro-mustang-wallpaper.jpg);
+  background-size: cover;
+}
+section:nth-child(3) {
+  background-image: url(image/wp2670841.jpg);
+  background-size: cover;
+}
+section:nth-child(4) {
+  background-image: url(image/yHMMH1n.jpg);
+  background-size: cover;
+}
+section:nth-child(5) {
+  background-image: url(image/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg);
+  background-size: cover;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0vw);
+  }
+  12.5% {
+    transform: translateX(-100vw);
+  }
+  25% {
+    transform: translateX(-100vw);
+  }
+  37.5% {
+    transform: translateX(-200vw);
+  }
+  50% {
+    transform: translateX(-200vw);
+  }
+  62.5% {
+    transform: translateX(-300vw);
+  }
+  75% {
+    transform: translateX(-300vw);
+  }
+  87.5% {
+    transform: translateX(-400vw);
+  }
+  100% {
+    transform: translateX(-400vw);
+  }
+}

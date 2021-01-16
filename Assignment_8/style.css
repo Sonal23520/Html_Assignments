@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  position: absolute;
+  border: 12px solid rgb(116, 116, 116);
+  height: 300px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 100%;
+  border-top: 12px solid red;
+}
+
+section:hover {
+  transition: all 2s;
+  transform: rotate(360deg);
+}
+.line {
+  position: absolute;
+  background-color: red;
+  width: 50%;
+  height: 12px;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+  transform-origin: 0%;
+}
+.circle {
+  position: absolute;
+  background-color: red;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  right: 9%;
+  top: 9%;
+}
